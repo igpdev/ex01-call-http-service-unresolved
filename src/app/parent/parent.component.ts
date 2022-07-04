@@ -10,10 +10,11 @@ export class ParentComponent implements OnInit {
   users: User[];
   serviceCalled: Boolean = false;
 
-  constructor(private userService: UserService) {}
+  // Exercise 1. Inject the UserService in the constructor with the name userService
+  constructor() {}
 
   ngOnInit() {
-    // 1. Call the getUsers service to assign the data into the users varaible
-    // 2. In the same service call assignment, set the serviceCalled property to true.
+    // 2. Call the getUsers service to assign the data into the users varaible
+    // 3. In the same service call assignment, set the serviceCalled property to true.
   }
 }
