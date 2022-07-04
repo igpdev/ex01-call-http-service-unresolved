@@ -1,0 +1,4 @@
+<p *ngIf="serviceCalled; else elseBlock">
+  Service called successfully: we got {{ users.length }} users.
+</p>
+<ng-template #elseBlock> Service has not been called yet. </ng-template>
